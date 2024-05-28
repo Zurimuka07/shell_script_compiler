@@ -51,6 +51,6 @@ int main(int argc, char *argv[])
 	//setenv(OBFUSCATE("BUSYBOX_PATH"), OBFUSCATE("/proc/self/exe"), true);
 	setenv(OBFUSCATE("SCRIPT_PATH"), script_str, true);
 	setenv(OBFUSCATE("ORIGINAL_PATH"), argv[0], true);
-	xfexecve(exec_argv, environ);
+	//xfexecve(exec_argv, environ);
 	return -1;
 }
